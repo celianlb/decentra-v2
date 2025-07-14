@@ -1,0 +1,88 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Cursor rules for a Next.js App Router project using React, TailwindCSS, TypeScript, Prisma, Zustand, and Zod. Ensures SSR-first rendering, optimized code organization, and best practices across architecture, performance, SEO, and accessibility.
+alwaysApply: true
+---
+
+## 👨‍💻 General
+
+- The AI assistant must behave as a **senior full-stack engineer** who deeply understands all the following technologies and their latest stable versions: Next.js (App Router), React, TypeScript, TailwindCSS, Prisma, Zustand, and Zod.
+- The AI should always start by analyzing the **existing codebase** before generating or refactoring any code. This helps avoid duplication and ensures consistency.
+- Project **folder names** must be in `camelCase`.
+
+## 📁 Project Structure
+
+- No `src/` directory.
+- Pages are located at `app/name-page/page.tsx`.
+- API routes are located at `app/api/name-folder/route.ts`.
+- Shared layouts are declared with `layout.tsx`.
+- Each page must support **SSR by default**, using server components.
+- The main page (`app/page.tsx`) must include a `generateMetadata()` function for SEO optimization.
+
+## 🧱 Components
+
+- UI components go into `components/UI/`, only for **presentational, stateless elements**.
+- Main or domain-specific components go into `components/`.
+- Component filenames follow the pattern `component-name.tsx` (kebab-case).
+- Component function names must use PascalCase.
+
+## 🔄 Rendering Strategy
+
+- Always prefer **SSR** over CSR.
+- Only add `"use client"` when strictly necessary (e.g., for interactivity or animations).
+- Never use `useState`/`useEffect` to fetch data from the database.
+- Use **Prisma queries** defined in the `queries/` folder.
+- Queries must be exported from functions and reused in components/pages.
+- Each query function should be in its own file named after its purpose, using `camelCase`.
+
+## 🔍 SEO & Metadata
+
+- Always define `generateMetadata()` in `page.tsx` files, especially for the home page.
+- Metadata must include `title`, `description`, and optionally `openGraph` and `twitter` fields.
+- Prioritize server-rendered metadata to improve indexing by search engines.
+
+## 🧠 TypeScript & Prisma
+
+- Always use **coherent, explicit typing** with TypeScript.
+- Types/interfaces must be created in the `types/` folder.
+- Each type should live in its own file using `camelCase` (e.g., `userProfile.ts`).
+- The AI should reuse **Prisma-generated types** whenever possible to avoid redundancy.
+- All data fetched from Prisma should be **typed using Prisma models** or custom interfaces extending Prisma types.
+
+## 🧩 Zustand & Custom Hooks
+
+- Custom React hooks must be placed in the `hooks/` directory.
+- Hook filenames follow the format `useFeature.ts`.
+- Zustand stores must be placed in the `stores/` directory.
+- Store filenames follow the format `featureStore.ts`.
+- Store functions must be named like `useFeatureStore`.
+- Each hook or store must be scoped to one purpose only (single-responsibility principle).
+
+## 💅 Code Quality
+
+- Use **ESLint** (Next.js + TypeScript config) and **Prettier** automatically for formatting.
+- Code generated must always conform to linting and formatting rules.
+- Follow idiomatic Next.js and React patterns:
+- Avoid `any`, prefer `unknown`, `z.infer`, or Prisma types.
+- Avoid imperative DOM manipulation unless strictly necessary.
+
+## ♿ Accessibility
+
+- Respect WCAG guidelines:
+- Semantic HTML tags: `<main>`, `<header>`, `<section>`, `<button>`, etc.
+- Form elements must have labels.
+- All images must include a descriptive `alt` tag.
+- All interactive elements should be keyboard accessible.
+- Ensure high contrast for readable UI.
+- Ensure focus visibility is not suppressed by Tailwind or CSS reset.
+
+## 🖼️ Image Handling
+
+- All images must be lazy-loaded by default (`loading="lazy"`).
+- Use the `<Image />` component from `next/image` when possible for optimization.
+
+---

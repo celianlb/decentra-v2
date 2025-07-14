@@ -5,22 +5,55 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-dark-purple: #0a0418;
+  --color-dark: #070016;
+  --color-purple-bento: #110729;
+  --color-amethyste: #1d0462;
+  --color-purple: #4b27ae;
+  --color-ultraviolet-900: #8f5eee;
+  --color-ultraviolet-800: #d7c5f9;
+  --color-ultraviolet-700: #ede5fc;
+  --color-ultraviolet-600: #fbf9fe;
+
+  --font-mansfield: "Mansfield", sans-serif;
+  --font-stara: "Stara", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  @font-face {
+    font-family: "Mansfield";
+    font-weight: 300;
+    src: url("/fonts/mansfield/Mansfield-Light.ttf") format("truetype");
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @font-face {
+    font-family: "Mansfield";
+    font-weight: 500;
+    src: url("/fonts/mansfield/Mansfield-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Mansfield";
+    font-weight: 600;
+    src: url("/fonts/mansfield/Mansfield-Semi-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Mansfield";
+    font-weight: 700;
+    src: url("/fonts/mansfield/Mansfield-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Stara";
+    font-weight: 700;
+    src: url("/fonts/stara/Stara-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "Stara";
+    font-weight: 600;
+    src: url("/fonts/stara/Stara-SemiBold.otf") format("opentype");
+  }
 }
