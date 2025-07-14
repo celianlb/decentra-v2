@@ -12,9 +12,9 @@ export default function Formations() {
           <Image
             src="/home/formations/circle-left.svg"
             alt="Décoration gauche"
-            width={100}
-            height={100}
-            className="flex-shrink-0"
+            width={50}
+            height={50}
+            className="flex-shrink-0 md:w-[100px] md:h-[100px]"
           />
           <h2 className="text-white text-[2rem] font-stara tracking-tight text-center font-bold max-w-[350px]">
             Trouvez le programme qui vous correspond
@@ -22,9 +22,9 @@ export default function Formations() {
           <Image
             src="/home/formations/circle-right.svg"
             alt="Décoration droite"
-            width={100}
-            height={100}
-            className="flex-shrink-0"
+            width={50}
+            height={50}
+            className="flex-shrink-0 md:w-[100px] md:h-[100px]"
           />
         </div>
       </div>
