@@ -77,9 +77,9 @@ export default function BentoGrid() {
               <Image
                 src="/home/bento/cube-diplome.svg"
                 alt="Bento 1"
-                width={150}
-                height={150}
-                className="absolute -right-3 -top-3"
+                width={100}
+                height={100}
+                className="absolute -right-3 -top-3 md:w-[150px] md:h-[150px]"
               />
               <h3 className="text-[2rem] font-stara font-bold text-white [text-shadow:_0px_0px_8px_rgb(194_168_255_/_1.00)]">
                 {bentoItems[3].title}
