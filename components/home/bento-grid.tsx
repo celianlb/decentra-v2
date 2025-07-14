@@ -135,7 +135,7 @@ const BentoCard = ({
   return (
     <div
       className={cn(
-        "flex flex-col gap-4 bg-purple-bento rounded-3xl border border-ultraviolet-800 p-8",
+        "flex flex-col gap-4 bg-purple-bento rounded-3xl border-[0.5px] border-ultraviolet-800 p-8",
         className
       )}
     >
@@ -154,7 +154,7 @@ const BentoCardAlt = ({
   return (
     <div
       className={cn(
-        "flex flex-col gap-4 bg-[radial-gradient(ellipse_50.00%_50.00%_at_50.00%_50.00%,_#4B27AE_0%,_#18005A_100%)] rounded-3xl border border-white p-8",
+        "flex flex-col gap-4 bg-[radial-gradient(ellipse_50.00%_50.00%_at_50.00%_50.00%,_#4B27AE_0%,_#18005A_100%)] rounded-3xl border-[0.5px] border-white p-8",
         className
       )}
     >
