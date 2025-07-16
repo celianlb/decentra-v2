@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body className={`antialiased bg-dark text-white`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

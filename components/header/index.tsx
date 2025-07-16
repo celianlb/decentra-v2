@@ -67,7 +67,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black border-b border-gray-700 z-50">
+        <div className="md:hidden absolute top-full left-0 w-full bg-dark border-b border-gray-700 z-50">
           <nav className="px-4 py-4">
             <ul className="flex flex-col gap-4 font-mansfield font-semibold">
               {menuItems.map((item, index) => (

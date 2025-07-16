@@ -35,7 +35,6 @@ export default function Value() {
           "[background-image:linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)]"
         )}
       />
-      <div className="pointer-events-none absolute inset-0 bg-dark-purple [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)] " />
       <div className="flex flex-col gap-3 md:max-w-[30vw] relative z-10">
         <span className="text-ultraviolet-900 text-[14px] font-mansfield bg-ultraviolet-700/80 py-1 px-2 rounded-full w-fit">
           nos valeurs

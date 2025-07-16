@@ -8,7 +8,7 @@ export default function Section({
   className?: string;
 }) {
   return (
-    <section className={cn("mx-12 my-24 md:mx-24 md:my-44", className)}>
+    <section className={cn("mx-12 my-24 md:mx-[120px] md:my-48", className)}>
       {children}
     </section>
   );
