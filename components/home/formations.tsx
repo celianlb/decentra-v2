@@ -158,7 +158,7 @@ export default function Formations() {
       title: "Concepteur et Développeur d'Applications",
       description:
         "Découvrez comment concevoir et développer des applications mobiles et web en utilisant les dernières technologies.",
-      duration: "12 mois",
+      duration: "14 mois",
       level: "Bac+3",
       slug: "concepteur-developpeur-applications",
       theme: "mobile" as const,
