@@ -30,13 +30,15 @@ export default function BlogArticleCard({ article }: BlogArticleCardProps) {
 
         {/* Image container with frame */}
         <div className="relative p-4">
-          <div className="relative h-48 rounded-2xl overflow-hidden border-2 border-gray-600/50 shadow-lg shadow-black/20">
+          <div className="relative h-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-gray-600/50 shadow-lg shadow-black/20">
             <Image
               src={article.image}
               alt={article.title}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-500"
-              loading="lazy"
+              quality={90}
+              priority={false}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
 
