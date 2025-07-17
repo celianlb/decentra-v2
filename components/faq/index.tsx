@@ -29,12 +29,12 @@ export default function FAQ({ data, className }: FAQProps) {
   return (
     <Section
       className={cn(
-        "relative flex flex-col md:flex-row gap-8 items-start",
+        "relative flex flex-col lg:flex-row gap-8 items-start",
         className
       )}
     >
       {/* Cercle violet en position absolue */}
-      <div className="absolute top-0 left-1/2 transform  w-96 h-96 bg-ultraviolet-900 rounded-full blur-[100px] z-0"></div>
+      <div className="absolute top-1/3 md:top-0 md:left-1/2 transform  w-96 h-96 bg-ultraviolet-900 rounded-full blur-[100px] z-0"></div>
 
       <div className="relative z-10 flex flex-col gap-12">
         <div className="flex flex-col">

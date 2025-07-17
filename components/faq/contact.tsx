@@ -8,7 +8,7 @@ export default function ContactCTA() {
     useContactForm();
 
   return (
-    <div className="flex flex-col gap-8 items-center justify-center bg-purple-bento rounded-4xl p-12 md:w-1/3 z-50 border-[0.5px] border-ultraviolet-800/20">
+    <div className="flex flex-col gap-8 items-center justify-center bg-purple-bento rounded-4xl p-12 w-full lg:w-1/3 z-50 border-[0.5px] border-ultraviolet-800/20">
       <Image
         src="/assets/logo-decentra-white.svg"
         alt="Contact"
