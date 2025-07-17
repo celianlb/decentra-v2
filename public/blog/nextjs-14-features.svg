@@ -1,0 +1,150 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dégradés modernes -->
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#020617;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Filtres -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Grille de code -->
+  <pattern id="codeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="40" height="40" fill="none" stroke="#1E293B" stroke-width="1" opacity="0.5"/>
+    <circle cx="20" cy="20" r="1" fill="#3B82F6" opacity="0.3"/>
+  </pattern>
+  <rect width="400" height="300" fill="url(#codeGrid)" opacity="0.8"/>
+  
+  <!-- Header avec titre -->
+  <rect x="20" y="20" width="360" height="50" fill="url(#cardGradient)" rx="12" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Next.js 14</text>
+  <text x="200" y="55" text-anchor="middle" fill="#3B82F6" font-family="Arial, sans-serif" font-size="12">The React Framework</text>
+  
+  <!-- Barre de navigation simulée -->
+  <rect x="30" y="30" width="8" height="8" fill="#EF4444" rx="4"/>
+  <rect x="42" y="30" width="8" height="8" fill="#F59E0B" rx="4"/>
+  <rect x="54" y="30" width="8" height="8" fill="#10B981" rx="4"/>
+  
+  <!-- Cartes de fonctionnalités en grille -->
+  <g filter="url(#shadow)">
+    <!-- App Router -->
+    <g transform="translate(30, 90)">
+      <rect x="0" y="0" width="160" height="80" fill="url(#cardGradient)" rx="8" stroke="#3B82F6" stroke-width="1"/>
+      <rect x="10" y="10" width="140" height="25" fill="#3B82F6" rx="4" opacity="0.2"/>
+      <text x="80" y="27" text-anchor="middle" fill="#3B82F6" font-family="Arial, sans-serif" font-size="12" font-weight="bold">App Router</text>
+      <text x="15" y="50" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Nouvelle architecture</text>
+      <text x="15" y="65" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Routage basé sur les fichiers</text>
+      
+      <!-- Icône de dossier -->
+      <rect x="120" y="45" width="20" height="15" fill="none" stroke="#3B82F6" stroke-width="1" rx="2"/>
+      <path d="M125,45 L125,42 L135,42 L137,45" stroke="#3B82F6" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Server Components -->
+    <g transform="translate(210, 90)">
+      <rect x="0" y="0" width="160" height="80" fill="url(#cardGradient)" rx="8" stroke="#10B981" stroke-width="1"/>
+      <rect x="10" y="10" width="140" height="25" fill="#10B981" rx="4" opacity="0.2"/>
+      <text x="80" y="27" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Server Components</text>
+      <text x="15" y="50" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Rendu côté serveur</text>
+      <text x="15" y="65" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Performance optimisée</text>
+      
+      <!-- Icône de serveur -->
+      <rect x="120" y="45" width="20" height="15" fill="none" stroke="#10B981" stroke-width="1" rx="2"/>
+      <line x1="125" y1="50" x2="135" y2="50" stroke="#10B981" stroke-width="1"/>
+      <line x1="125" y1="53" x2="135" y2="53" stroke="#10B981" stroke-width="1"/>
+      <line x1="125" y1="56" x2="135" y2="56" stroke="#10B981" stroke-width="1"/>
+    </g>
+    
+    <!-- Turbopack -->
+    <g transform="translate(30, 190)">
+      <rect x="0" y="0" width="160" height="80" fill="url(#cardGradient)" rx="8" stroke="#F59E0B" stroke-width="1"/>
+      <rect x="10" y="10" width="140" height="25" fill="#F59E0B" rx="4" opacity="0.2"/>
+      <text x="80" y="27" text-anchor="middle" fill="#F59E0B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Turbopack</text>
+      <text x="15" y="50" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Bundler ultra-rapide</text>
+      <text x="15" y="65" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Remplace Webpack</text>
+      
+      <!-- Icône de vitesse -->
+      <path d="M120,52 L130,48 L140,52 L130,56 Z" fill="#F59E0B" opacity="0.8"/>
+      <path d="M125,52 L135,49 L145,52 L135,55 Z" fill="#FCD34D" opacity="0.6"/>
+    </g>
+    
+    <!-- Streaming -->
+    <g transform="translate(210, 190)">
+      <rect x="0" y="0" width="160" height="80" fill="url(#cardGradient)" rx="8" stroke="#EC4899" stroke-width="1"/>
+      <rect x="10" y="10" width="140" height="25" fill="#EC4899" rx="4" opacity="0.2"/>
+      <text x="80" y="27" text-anchor="middle" fill="#EC4899" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Streaming</text>
+      <text x="15" y="50" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Rendu progressif</text>
+      <text x="15" y="65" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="10">• Chargement optimisé</text>
+      
+      <!-- Icône de streaming -->
+      <path d="M120,52 L126,50 L132,52 L126,54 Z" fill="#EC4899" opacity="0.8"/>
+      <path d="M128,52 L134,50 L140,52 L134,54 Z" fill="#F472B6" opacity="0.6"/>
+      <path d="M136,52 L142,50 L148,52 L142,54 Z" fill="#FBBF24" opacity="0.4"/>
+    </g>
+  </g>
+  
+  <!-- Indicateurs de performance -->
+  <g transform="translate(30, 280)">
+    <rect x="0" y="0" width="340" height="15" fill="#1E293B" rx="8" stroke="#374151" stroke-width="1"/>
+    <text x="5" y="11" fill="#9CA3AF" font-family="monospace" font-size="8">Performance:</text>
+    <rect x="80" y="3" width="60" height="9" fill="#10B981" rx="4"/>
+    <text x="85" y="10" fill="#000000" font-family="monospace" font-size="7">Fast</text>
+    <rect x="150" y="3" width="50" height="9" fill="#3B82F6" rx="4"/>
+    <text x="155" y="10" fill="#FFFFFF" font-family="monospace" font-size="7">Modern</text>
+    <rect x="210" y="3" width="55" height="9" fill="#8B5CF6" rx="4"/>
+    <text x="215" y="10" fill="#FFFFFF" font-family="monospace" font-size="7">Scalable</text>
+  </g>
+  
+  <!-- Particules flottantes -->
+  <g opacity="0.6">
+    <circle cx="50" cy="50" r="2" fill="#3B82F6">
+      <animate attributeName="cy" values="50;40;50" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="80" r="1.5" fill="#10B981">
+      <animate attributeName="cy" values="80;70;80" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="250" r="2" fill="#F59E0B">
+      <animate attributeName="cy" values="250;240;250" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="220" r="1.5" fill="#EC4899">
+      <animate attributeName="cy" values="220;210;220" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Lignes de connexion subtiles -->
+  <g opacity="0.3">
+    <line x1="190" y1="130" x2="210" y2="130" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="190" y1="230" x2="210" y2="230" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="110" y1="170" x2="110" y2="190" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="290" y1="170" x2="290" y2="190" stroke="#3B82F6" stroke-width="1"/>
+  </g>
+</svg> 

@@ -1,3 +1,4 @@
+import BlogArticles from "@/components/blog-articles";
 import FAQ from "@/components/faq";
 import BentoGrid from "@/components/home/bento-grid";
 import Formations from "@/components/home/formations";
@@ -13,6 +14,7 @@ export default function Home() {
       <Value />
       <Formations />
       <FAQ data={faqData.home} />
+      <BlogArticles />
     </main>
   );
 }
