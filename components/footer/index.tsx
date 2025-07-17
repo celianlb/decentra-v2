@@ -206,14 +206,14 @@ export default function Footer() {
             {/* Certification Qualiopi */}
             <div className="bg-purple-bento w-fit rounded-lg p-4 border border-gray-600">
               <Image
-                src="/pdf/Certificat-Qualiopi.pdf"
+                src="/assets/qualiopi.svg"
                 alt="Certification Qualiopi"
                 width={150}
                 height={100}
                 className="mb-4"
               />
               <a
-                href="/certificat-qualiopi.pdf"
+                href="/pdf/Certificat-Qualiopi.pdf"
                 download
                 className="inline-flex items-center gap-2 bg-purple hover:bg-purple/80 text-white px-3 py-2 rounded-lg text-xs font-mansfield font-semibold transition-all duration-300"
               >
