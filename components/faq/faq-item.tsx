@@ -33,7 +33,7 @@ export default function FAQItemComponent({
         </h3>
         <div
           className={cn(
-            "flex items-center justify-center w-8 h-8 rounded-full border-2 border-ultraviolet-800 transition-all duration-300 flex-shrink-0 ml-4",
+            "flex items-center justify-center w-8 h-8 rounded-full border border-ultraviolet-800 transition-all duration-300 flex-shrink-0 ml-4",
             "hover:border-ultraviolet-700 hover:bg-ultraviolet-700/20",
             isOpen && "border-ultraviolet-700 bg-ultraviolet-700/30 rotate-45"
           )}
