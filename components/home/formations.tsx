@@ -160,7 +160,7 @@ export default function Formations() {
         "Découvrez comment concevoir et développer des applications mobiles et web en utilisant les dernières technologies.",
       duration: "14 mois",
       level: "Bac+3",
-      slug: "concepteur-developpeur-applications",
+      slug: "cda",
       theme: "mobile" as const,
     },
     {
